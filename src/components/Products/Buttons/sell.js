@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sell = () => {
     return(
-        <div className="button">Sell</div>
+       <div className="button">Buy</div>
     );
 }
 

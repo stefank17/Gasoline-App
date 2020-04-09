@@ -1,10 +1,15 @@
 import React from 'react';
+import bus from '../../rescources/bus.png';
+import logo from '../../rescources/logo.png';
 
-const Logo = () => {
+
+const Logo = ({ goHome }) => {
     return(
-        <div className="logo">
-            <div>logo</div>
-            <div>logoText</div>
+        <div id="logo" className="logo" onClick={() => { goHome() } } href="#">
+            
+            <a href="#"><div><img src={bus}></img></div>
+                <div><img src={logo}></img></div></a>
+            
         </div>
         );
     }

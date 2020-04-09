@@ -1,12 +1,11 @@
 import React from 'react';
 import ProductDetails from '../Details';
 
-const ProductList = (props) => {
-    console.log("From list",props.getProducts)
-    const products = props.getProducts;
+const ProductList = ({products}) => {
+    console.log(products)
     return(
         <div className="productContainer">
-            <ProductDetails products={products}/>
+            <a href="#"><ProductDetails products={products}/></a>
         </div>
     );
 }
